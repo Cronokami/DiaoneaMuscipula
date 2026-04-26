@@ -1,4 +1,3 @@
 repository "DiaoneaMuscipula/OJogoDaPlantinha@4672973139574@cloud"
   path "/"
-    br "/main"
-    co "/main"
+    smartbranch "/main/CharacterMovement"
