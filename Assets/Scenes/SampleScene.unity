@@ -263,6 +263,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8099968524736455018, guid: 61c2f07641af78a4a94f17a46fd1fe3b, type: 3}
   m_PrefabInstance: {fileID: 2543919163612627801}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &217053492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4524844272480111340, guid: 61c2f07641af78a4a94f17a46fd1fe3b, type: 3}
+  m_PrefabInstance: {fileID: 2543919163612627801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +528,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &795201095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3142666752045236726, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
+  m_PrefabInstance: {fileID: 2302869088295617147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &795201096
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795201095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.49999997
+--- !u!50 &795201097
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795201095}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1209912709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,14 +1157,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Planta Carn\xEDvora"
       objectReference: {fileID: 0}
+    - target: {fileID: 6170558133429912874, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8330800543536090214, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
       propertyPath: Vaso
       value: 
       objectReference: {fileID: 101331371}
+    - target: {fileID: 9091702054602741863, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 217053492}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3142666752045236726, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 795201097}
+    - targetCorrespondingSourceObject: {fileID: 3142666752045236726, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 795201096}
   m_SourcePrefab: {fileID: 100100000, guid: 9aba36a5ee3cb594092b7fc29efdcc0a, type: 3}
 --- !u!1001 &2543919163612627801
 PrefabInstance:

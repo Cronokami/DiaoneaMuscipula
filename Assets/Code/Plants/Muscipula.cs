@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class Muscipula : MonoBehaviour
 {
     public GameObject PlantHead;
+    public PlayerInput playerInput;
 
     void Start()
     {
@@ -16,5 +19,10 @@ public class Muscipula : MonoBehaviour
         Vector3 lookDirection = mouseWorldPosition - PlantHead.transform.position;
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
         PlantHead.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    private void OnAttack()
+    {
+        Debug.Log("attacks");
     }
 }

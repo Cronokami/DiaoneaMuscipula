@@ -771,11 +771,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 7992b42d-be7c-407a-a90a-831c900d5bac
+  cloudProjectId: 97c7e8a0-7417-4cb6-9d56-552ec03b0dbc
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: DiaoneaMuscipula
-  organizationId: cronokami
+  organizationId: chronokami
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
